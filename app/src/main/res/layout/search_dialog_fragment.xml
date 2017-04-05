@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="16dp">
+
+    <TextView
+        android:id="@+id/search_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="8dp"
+        android:text="SEARCH"
+        android:textStyle="bold"
+        android:textColor="@color/colorClouds"
+        android:textSize="16sp"
+        android:textAlignment="center"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/search_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_header"
+        android:layout_margin="8dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:hint="Search Term"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:maxLines="1"
+            android:inputType="text"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_query"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:text="SEARCH"/>
+
+
+    <TextView
+        android:id="@+id/search_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_query"
+        android:layout_toStartOf="@id/search_button"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/search_tip"/>
+
+
+</RelativeLayout>

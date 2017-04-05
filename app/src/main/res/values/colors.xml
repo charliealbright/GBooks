@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/colorWetAsphalt</color>
+    <color name="colorPrimaryDark">@color/colorMidnightBlue</color>
+    <color name="colorAccent">@color/colorOrange</color>
+
+    <color name="colorWetAsphalt">#34495E</color>
+    <color name="colorMidnightBlue">#2C3E50</color>
+    <color name="colorOrange">#F39C12</color>
+    <color name="colorClouds">#ECF0F1</color>
+    <color name="colorConcrete">#95A5A6</color>
+
+    <color name="colorTranslucent">#88000000</color>
+</resources>
