@@ -114,6 +114,8 @@ public class MainActivity extends AppCompatActivity implements SearchDialogFragm
         @Override
         public void onFailure(Call<GBooksResponse> call, Throwable t) {
             Timber.w(t);
+            Snackbar.make(mRootView, t.getMessage(), Snackbar.LENGTH_LONG).show();
+            mSearchOverlay.setVisibility(View.GONE);
         }
     };
 
